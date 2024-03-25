@@ -1256,26 +1256,33 @@ nav.navbar.bootsnav {
         color: rgb(7 89 133);
         font-weight: 700;
         font-size: 25px;
-        margin-right: 600px;
+        margin-right: 500px;
     }
     .footer-brand span {
         color: red;
         font-weight: 700;
     }
     .footer-menu-item {
-        width: 400px;
-        margin-left: 120px;
+        width: 300px;
+        margin-left: 180px;
         margin-top: -27px;
+
+        height:30px;
+
     }
     .footer-menu-item li {
         display: inline-block;
+        margin-left:20px;
     }
     .footer-menu-item .scroll:nth-child(1) a {
         font-size: 14px;
-        padding-left:20px;
+        margin-left:-70px;
+
     }
     .footer-menu-item .scroll:nth-child(2) a {
         font-size: 14px;
-        padding-right:100px;
+        padding-right:10px;
+
     }
+
 }
