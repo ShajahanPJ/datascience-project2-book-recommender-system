@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 # Define the path to the model folder
-MODEL_FOLDER = os.path.join(os.path.dirname(__file__), 'model')
+MODEL_FOLDER = os.path.join(os.path.dirname(__file__),  'model')
 
 # Construct the file paths
 popular_file = os.path.join(MODEL_FOLDER, 'popular.pkl')
@@ -92,4 +92,5 @@ def recommend():
         return render_template('index.html', error_message=error_message, **top_rated_books)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
+
