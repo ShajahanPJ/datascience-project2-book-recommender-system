@@ -622,12 +622,17 @@ nav.navbar.bootsnav {
 @media (max-width: 475px) {
     .navbar-header .navbar-brand {
         font-size: 23px;
+
     }
     .navbar-header .navbar-brand span {
         font-size: 23px;
+        margin-right:250px;
+
+
     }
     .nav-links {
-        margin-left: 200px;
+        margin-left: -400px;
+
     }
     .nav-links .scroll:nth-child(1) a {
         font-size: 14px;
