@@ -679,7 +679,7 @@ nav.navbar.bootsnav {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
 
     html,body {
         overflow-x: hidden;
@@ -692,7 +692,7 @@ nav.navbar.bootsnav {
         font-size: 23px;
     }
     .nav-links {
-        margin-left: -150px;
+        margin-left: -200px;
     }
     .nav-links .scroll:nth-child(1) a {
         font-size: 14px;
