@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import os
 import pickle
 import numpy as np
@@ -38,10 +38,21 @@ def get_top_rated_books():
         'rating': list(popular_df['avg_rating'].values)
     }
 
+
+# Route to get the list of book titles
+@app.route('/book_titles')
+def get_book_titles():
+    book_titles = list(famous_book_details['Book-Title'])
+    return jsonify(book_titles)
+
+
+
 @app.route('/')
 def index():
     top_rated_books = get_top_rated_books()
     return render_template('index.html', **top_rated_books)
+
+
 
 @app.route('/recommend_books', methods=['POST'])
 def recommend():

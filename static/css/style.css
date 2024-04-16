@@ -241,14 +241,14 @@ nav.navbar.bootsnav {
 
 .nav-links .scroll:nth-child(1) a {
     color: rgb(7 89 133);
-    font-family: normal;
+    font-family: Cambria;
     font-weight: 400;
     font-size: 19px;
 }
 
 .nav-links .scroll:nth-child(2) a {
     color: rgb(7 89 133);
-    font-family: normal;
+    font-family: Cambria;
     font-weight: 400;
     font-size: 19px;
 
@@ -300,8 +300,10 @@ nav.navbar.bootsnav {
 
 .welcome-hero-serch-box {
     width: 100%;
+    position: relative;
     margin-left: 40px;
     padding: 50px;
+
 }
 
 .welcome-hero-form {
@@ -312,6 +314,7 @@ nav.navbar.bootsnav {
     margin-left: 0px;
     height: 120px;
     padding-right: 50px;
+
 }
 
 .input-text {
@@ -321,22 +324,69 @@ nav.navbar.bootsnav {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     outline: none;
     height: 35px;
-    padding-top: 10px;
+    padding-top: 5px;
     margin-right: 100px;
+
 }
 
 .input-text:focus {
     border-color: #ff545a;
     box-shadow: 0 0 5px rgba(255, 84, 90, 0.5);
-    font-size: 17px;
+    font-size: 15px;
     font-family: Sans-serif;
-    padding-left: 20px;
+    padding-left: 10px;
+
+
+
 }
 
 .small-placeholder::placeholder {
-    font-size: 15px;
-    padding-left: 20px;
+    font-size: 13px;
+    padding-left: 10px;
+
 }
+.result-box {
+    display: none;
+    margin-top: -3px;
+    position: absolute;
+    z-index: 9999;
+    margin-left: 120px;
+    width: 589px;
+    height: 200px;
+    font-size: 13px;
+    color: rgb(0 0 0);
+
+
+}
+
+.result-box ul {
+    border-top: 1px solid #999;
+    background:white;
+    padding: 0; /* Remove default padding */
+    border-radius:15px;
+
+
+}
+
+.result-box ul li {
+    list-style: shadow;
+    border-radius: 5px;
+    padding-right: 460px;
+    padding-top: 15px;
+    cursor: pointer;
+    width: 589px;
+    display: inline-block; /* Display items in a row */
+    margin-right: 10px;
+    background:white;
+
+    padding-left:10px;
+
+}
+
+.result-box ul li:hover {
+    background: #e9f3ff;
+}
+
 
 .error-message {
     padding-right: 540px;
@@ -536,7 +586,8 @@ nav.navbar.bootsnav {
         font-size: 28px;
     }
     .nav-links {
-        padding-left: 420px;
+        padding-left: 340px;
+
 
     }
 }
@@ -560,6 +611,7 @@ nav.navbar.bootsnav {
         margin-top: -30px;
         padding-left:350px;
         margin-left:120px;
+
 
     }
     .nav-links .scroll:nth-child(1) a {
@@ -586,14 +638,16 @@ nav.navbar.bootsnav {
 
     }
     .nav-links {
-        margin-left: 73px;
+        padding-left: 113px;
         padding-top: 3px;
+
     }
     .nav-links .scroll:nth-child(1) a {
         font-size: 17px;
+        margin-left:130px;
     }
     .nav-links .scroll:nth-child(2) a {
-        margin-left: -40px;
+        margin-left: 0px;
         font-size: 17px;
     }
 }
@@ -612,7 +666,7 @@ nav.navbar.bootsnav {
         font-size: 26px;
     }
     .nav-links {
-        margin-left:0px;
+        padding-left:70px;
         padding-top: 3px;
     }
     .nav-links .scroll:nth-child(1) a {
@@ -638,7 +692,7 @@ nav.navbar.bootsnav {
         font-size: 25px;
     }
     .nav-links {
-        margin-left: -95px;
+        margin-left: 25px;
         padding-top: 5px;
 
     }
@@ -669,7 +723,7 @@ nav.navbar.bootsnav {
 
     }
     .nav-links {
-        margin-left: -170px;
+        margin-left:-30px;
     }
     .nav-links .scroll:nth-child(1) a {
         font-size: 14px;
@@ -711,15 +765,56 @@ nav.navbar.bootsnav {
     .welcome-hero-txt h2 {
         font-size: 40px;
     }
+
+    .result-box {
+        margin-left: 120px;
+    }
+    .result-box ul li {
+        width: 579px;
+    }
+
+}
+
+
+@media (max-width: 1220px) {
+    .result-box {
+        margin-left: 120px;
+        width: 589px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .result-box {
+        margin-left: 10px;
+        width: 589px;
+
+    }
 }
 
 @media (max-width: 1180px) {
     .welcome-hero-txt h2 {
         font-size: 36px;
     }
+    .result-box {
+        margin-left: 10px;
+        width: 589px;
+
+    }
 }
 
 @media (max-width: 992px) {
+
+    .welcome-hero {
+        position: relative;
+        background: url(../images/welcome-hero/banner5.avif) no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        height: 1100px;
+        z-index: 1;
+    }
     .welcome-hero-txt h2 {
         font-size: 35px;
     }
@@ -731,6 +826,10 @@ nav.navbar.bootsnav {
     .input-text {
         width: 580px;
         height: 35px;
+    }
+    .result-box {
+        margin-left: 220px;
+        width: 579px;
     }
     .error-message {
         margin-top: -65px;
@@ -753,7 +852,7 @@ nav.navbar.bootsnav {
         background-position: center;
         background-size: cover;
         text-align: center;
-        height: 1450px;
+        height: 1650px;
         z-index: 1;
     }
     .welcome-hero-txt h2 {
@@ -767,6 +866,44 @@ nav.navbar.bootsnav {
     .input-text {
         width: 480px;
         height: 35px;
+
+    }
+    .result-box {
+        display: none;
+        margin-top: -3px;
+        position: absolute;
+        z-index: 9999;
+        margin-left: 120px;
+        width: 480px;
+        height: 200px;
+        font-size: 13px;
+        color: rgb(0 0 0);
+
+
+    }
+
+    .result-box ul {
+        border-top: 1px solid #999;
+        background:white;
+        padding: 0; /* Remove default padding */
+        border-radius:15px;
+
+
+    }
+
+    .result-box ul li {
+        list-style: shadow;
+        border-radius: 5px;
+        padding-right: 460px;
+        padding-top: 15px;
+        cursor: pointer;
+        width: 480px;
+        display: inline-block; /* Display items in a row */
+        margin-right: 10px;
+        background:white;
+
+        padding-left:10px;
+
     }
     .error-message {
         margin-top: -65px;
@@ -788,7 +925,7 @@ nav.navbar.bootsnav {
         background-position: center;
         background-size: cover;
         text-align: center;
-        height: 1410px;
+        height: 1600px;
         z-index: 1;
     }
     .welcome-hero-txt h2 {
@@ -799,10 +936,42 @@ nav.navbar.bootsnav {
         margin-left: 30px;
         height: 780px;
     }
+
+    .result-box, .result-box ul {
+        width: 379px;
+        margin-left:7px;
+    }
+
+    .result-box ul {
+        border-top: 1px solid #999;
+        background: white;
+        padding: 0;
+    }
+
+    .result-box ul li {
+        list-style: shadow;
+        border-radius: 3px;
+        padding-right: 250px; /* Adjust as needed */
+        padding-top: 15px;
+        cursor: pointer;
+        width: 379px;
+        display: inline-block;
+        margin-right: 10px;
+        background: white;
+        padding-left: 10px;
+    }
+
+    .result-box ul li:hover {
+        background: #e9f3ff;
+    }
+
+
     .input-text {
         width: 380px;
         height: 35px;
     }
+
+
     .error-message {
         margin-top: -65px;
     }
@@ -817,6 +986,19 @@ nav.navbar.bootsnav {
     }
 }
 
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+    .result-box ul li {
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 768px) {
+    .result-box ul li {
+        white-space: nowrap; /* Allow wrapping between words */
+
+    }
+}
+
 @media (max-width: 576px) {
     .welcome-hero {
         position: relative;
@@ -824,7 +1006,7 @@ nav.navbar.bootsnav {
         background-position: center;
         background-size: cover;
         text-align: center;
-        height: 1390px;
+        height: 1490px;
         z-index: 1;
     }
     welcome-hero-form {
@@ -850,6 +1032,11 @@ nav.navbar.bootsnav {
         margin-left: -20px;
         height: 35px;
     }
+    .result-box, .result-box ul {
+        width: 379px;
+        margin-left:-7px;
+    }
+
     .error-message {
         margin-top: -65px;
     }
@@ -871,7 +1058,7 @@ nav.navbar.bootsnav {
         background-position: center;
         background-size: cover;
         text-align: center;
-        height: 1380px;
+        height: 1480px;
         z-index: 1;
     }
     .welcome-hero-txt h2 {
@@ -879,7 +1066,7 @@ nav.navbar.bootsnav {
     }
     .welcome-hero-serch-box {
         width: 460px;
-        margin-left: -40px;
+        margin-left: -20px;
         height: 780px;
     }
     .welcome-hero-form {
@@ -895,6 +1082,30 @@ nav.navbar.bootsnav {
         margin-left: 3px;
         height: 35px;
     }
+    .result-box, .result-box ul {
+        width: 309px;
+        margin-left:-15px;
+    }
+
+    .result-box ul {
+        border-top: 1px solid #999;
+        background: white;
+        padding: 0;
+    }
+
+    .result-box ul li {
+        list-style: shadow;
+        border-radius: 3px;
+        padding-right: 250px; /* Adjust as needed */
+        padding-top: 15px;
+        cursor: pointer;
+        width: 340px;
+        display: inline-block;
+        margin-right: 10px;
+        background: white;
+        padding-left: 10px;
+    }
+
     .input-text:focus {
         padding-left: 20px;
     }
@@ -902,6 +1113,8 @@ nav.navbar.bootsnav {
         font-size: 15px;
         padding-left: 20px;
     }
+
+
     .error-message {
         padding-right: 540px;
     }
@@ -977,7 +1190,7 @@ nav.navbar.bootsnav {
         height: 1200px;
     }
     .card-body {
-        height: 270px;
+        height: 310px;
         width: 100px;
         overflow: hidden;
         margin-left: 50px;
@@ -1008,7 +1221,7 @@ nav.navbar.bootsnav {
         height: 1200px;
     }
     .card-body {
-        height: 260px;
+        height: 280px;
         overflow: hidden;
     }
     .card-img-top {
@@ -1037,7 +1250,7 @@ nav.navbar.bootsnav {
         height: 1200px;
     }
     .card-body {
-        height: 250px;
+        height: 270px;
         overflow: hidden;
     }
     .card-img-top {
@@ -1118,7 +1331,7 @@ nav.navbar.bootsnav {
     .recommend-image {
         margin-top: -20px;
         width: 400px;
-        margin-left: 90px;
+        margin-left: 40px;
         height: 1200px;
     }
     .card-body {
